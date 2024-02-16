@@ -1,0 +1,8 @@
+version: "3"
+services:
+  plantuml:
+    container_name: ${COMPOSE_PROJECT_NAME}-planuml
+    image: plantuml/plantuml-server:latest
+    restart: always
+    ports:
+      - 18080:8080
